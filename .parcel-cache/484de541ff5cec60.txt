@@ -1,0 +1,11 @@
+10
+46E:\VSCode\ts-basics\web\dist\index.b71e74eb.js133350473360746183 0
+28E:\VSCode\ts-basics\web\dist133350473360776151 1
+34E:\VSCode\ts-basics\web\index.html133350473016419053 0
+42E:\VSCode\ts-basics\web\src\models\User.ts133353038218409522 0
+41E:\VSCode\ts-basics\web\package-lock.json133353039211446522 0
+34E:\VSCode\ts-basics\web\src\models133353036140480604 1
+27E:\VSCode\ts-basics\web\src133353036097590932 1
+36E:\VSCode\ts-basics\web\src\index.ts133353038966601242 0
+50E:\VSCode\ts-basics\web\dist\index.b71e74eb.js.map133350473360776151 0
+39E:\VSCode\ts-basics\web\dist\index.html133350473360310143 0
