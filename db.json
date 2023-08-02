@@ -2,7 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "Karol"
+      "name": "Karol",
+      "age": 13
     },
     {
       "name": "Klaudia",
@@ -23,6 +24,16 @@
       "name": "Krzysio",
       "age": 3,
       "id": 5
+    },
+    {
+      "name": "Matrioshka",
+      "age": 20,
+      "id": 6
+    },
+    {
+      "name": "Kubix",
+      "age": 20,
+      "id": 7
     }
   ]
 }
