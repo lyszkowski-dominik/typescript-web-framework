@@ -2,7 +2,7 @@ import { AxiosPromise, AxiosResponse } from 'axios';
 
 type Callback = () => void;
 
-interface HasId {
+export interface HasId {
   id?: number;
 }
 
