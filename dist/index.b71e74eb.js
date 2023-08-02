@@ -591,14 +591,20 @@ class UserForm {
     constructor(parent, model){
         this.parent = parent;
         this.model = model;
+        this.onSetAgeClick = ()=>{
+            this.model.setRandomAge();
+        };
+        this.bindModel();
+    }
+    bindModel() {
+        this.model.on("change", ()=>{
+            this.render();
+        });
     }
     eventsMap() {
         return {
             "click:.set-age": this.onSetAgeClick
         };
-    }
-    onSetAgeClick() {
-        console.log("change age");
     }
     template() {
         return `
@@ -622,6 +628,7 @@ class UserForm {
         }
     }
     render() {
+        this.parent.innerHTML = "";
         const templateElement = document.createElement("template");
         templateElement.innerHTML = this.template();
         this.bindEvents(templateElement.content);
@@ -675,6 +682,12 @@ class User extends (0, _model.Model) {
     }
     static buildCollection() {
         return new (0, _collection.Collection)(dbUrl, (json)=>User.build(json));
+    }
+    setRandomAge() {
+        const age = Math.round(Math.random() * 100);
+        this.set({
+            age
+        });
     }
 }
 
